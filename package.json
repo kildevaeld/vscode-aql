@@ -1,0 +1,26 @@
+{
+    "name": "aql",
+    "displayName": "AQL",
+    "description": "ArangoDB Query Language",
+    "version": "0.0.1",
+    "publisher": "kildevaeld",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "aql",
+            "aliases": ["ArangoDB Query Language", "aql"],
+            "extensions": [".aql"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "aql",
+            "scopeName": "source.aql",
+            "path": "./syntaxes/aql.tmLanguage.json"
+        }]
+    }
+}
